@@ -1,5 +1,36 @@
-header{
-    height: 90px;
+header {
+    height: 80px;
     background-color: rgba(231, 108, 31, 1);
+}
 
+.landing-section {
+    height: 100dvh;
+    width: 100%;
+}
+
+.landing-img {
+    height: 45dvh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30% 25%;
+    border-radius: 16px;
+}
+
+.landing-icon {
+    height: 150px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+}
+
+.rating-icon{
+    width: 100px;
 }
