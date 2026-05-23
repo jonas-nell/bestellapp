@@ -11,9 +11,11 @@
     font-family: inherit;
     background: initial;
     border: initial;
+    font-family: Palanquin;
 }
 
 .content {
     width: 100%;
-    padding: max(calc(50% - 720px), 16px);
+    padding: 0 max(calc(50% - 720px), 16px);
+    height: 100%;
 }
