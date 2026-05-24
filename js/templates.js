@@ -11,3 +11,7 @@ function getCategoryTemplate(category){
         </section>
     `;
 }
+
+function getDishTemplate(dish){
+
+}
