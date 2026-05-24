@@ -6,16 +6,17 @@
         <title>Unleash your appetite!</title>
         <link rel="stylesheet" href="./css/standard.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <script src="./data/categories.js"></script>
         <script src="./js/templates.js"></script>
         <script src="./js/script.js" defer></script>
     </head>
-    <body>
+    <body onload="init()">
         <header>
             <div class="content">
                 <img class="header-img" src="./assets/icons/logo.png" alt="" />
             </div>
         </header>
-        <main>
+        <main id="main">
             <section class="landing-section">
                 <div class="content landing">
                     <div>
@@ -36,27 +37,6 @@
                         <p>The best of Burgers, Pizza, and Greens, all in one great place.</p>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div class="dish-header">
-                    <h2>Burger</h2>
-                    <img class="dish-icon" src="./assets/icons/burger-icon.png" alt="">
-                </div>
-                <div id="burger-container"></div>
-            </section>
-            <section>
-                <div class="dish-header">
-                    <h2>Pizza</h2>
-                    <img class="dish-icon" src="./assets/icons/pizza-icon.png" alt="">
-                </div>
-                <div id="pizza-container"></div>
-            </section>
-            <section>
-                <div class="dish-header">
-                    <h2>Salad</h2>
-                    <img class="dish-icon" src="./assets/icons/salad-icon.png" alt="">
-                </div>
-                <div id="salad-container"></div>
             </section>
         </main>
         <footer>
