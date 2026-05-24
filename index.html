@@ -6,16 +6,17 @@
         <title>Unleash your appetite!</title>
         <link rel="stylesheet" href="./css/standard.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <script src="./data/categories.js"></script>
         <script src="./js/templates.js"></script>
         <script src="./js/script.js" defer></script>
     </head>
-    <body>
+    <body onload="init()">
         <header>
             <div class="content">
                 <img class="header-img" src="./assets/icons/logo.png" alt="" />
             </div>
         </header>
-        <main>
+        <main id="main">
             <section class="landing-section">
                 <div class="content landing">
                     <div>
@@ -31,24 +32,24 @@
                         />
                     </div>
                     <div class="bottom-landingpage"><!-- bottom part-->
-                        <img class="rating-icon"src="./assets/icons/rating-icon.png" alt="">
+                        <img class="rating-icon" src="./assets/icons/rating-icon.png" alt="">
                         <h1><span class="red">Burger</span>House</h1>
                         <p>The best of Burgers, Pizza, and Greens, all in one great place.</p>
                     </div>
                 </div>
             </section>
-            <footer>
-                <p>Imprint</p>
-                <p>Cookie Preferences</p>
-                <div class="copyright"><img src="./assets/icons/copyright.png" alt=""> <p>2025 BurgerHouse</p></div>
-            </footer>
-            <nav>
-            <a href=""><img src="./assets/icons/home-icon.png" alt=""></a>
-            <a href=""><img src="./assets/icons/person-icon.png" alt=""></a>
-            <a href=""><img src="./assets/icons/menu-icon.png" alt=""></a>
-            <a href=""><img src="./assets/icons/shopping-cart-icon.png" alt=""></a>
-            </nav>
         </main>
+        <footer>
+            <p>Imprint</p>
+            <p>Cookie Preferences</p>
+            <div class="copyright"><img src="./assets/icons/copyright.png" alt=""> <p>2025 BurgerHouse</p></div>
+        </footer>
+        <nav>
+        <a href=""><img src="./assets/icons/home-icon.png" alt=""></a>
+        <a href=""><img src="./assets/icons/person-icon.png" alt=""></a>
+        <a href=""><img src="./assets/icons/menu-icon.png" alt=""></a>
+        <a href=""><img src="./assets/icons/shopping-cart-icon.png" alt=""></a>
+        </nav>
     </body>
 </html>
 

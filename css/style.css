@@ -115,3 +115,20 @@ footer{
 .copyright img{
     height: 24px;
 }
+
+.dish-header{
+    height:80px;
+    color: white;
+    background-color: rgba(231, 108, 31, 1);
+
+    text-align: center;
+    font-size: 32px;
+}
+
+.dish-icon{
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top:-10%;
+    transform: translate(-50%, -50%);
+}
