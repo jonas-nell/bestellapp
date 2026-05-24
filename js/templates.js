@@ -20,7 +20,7 @@ function getDishTemplate(dish){
             <p class="ingredients">${dish.ingredients.join(", ")}</p>
             <div class="bottom-dish">
                 <span>${dish.price.toFixed(2)} €</span>
-                <button onclick="addToBasket(${dish.id})">Add to basket</button>
+                <button class="addBtn" onclick="addToBasket(${dish.id})">Add to basket</button>
             </div>
         </div>
     `

@@ -147,3 +147,24 @@ footer{
 
     object-fit: cover;
 }
+
+.bottom-dish{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addBtn{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 2px 8px;
+}
+
+section .content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+section{
+    padding-bottom: 48px;
+}
