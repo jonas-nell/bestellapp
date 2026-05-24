@@ -13,5 +13,15 @@ function getCategoryTemplate(category){
 }
 
 function getDishTemplate(dish){
-
+    return /*html*/`
+        <div class="dish">
+            <img class="dish-img" src="${dish.dishPicture}" alt="">
+            <h3>${dish.dishName}</h3>
+            <p class="ingredients">${dish.ingredients.join(", ")}</p>
+            <div class="bottom-dish">
+                <span>${dish.price.toFixed(2)} €</span>
+                <button onclick="addToBasket(${dish.id})">Add to basket</button>
+            </div>
+        </div>
+    `
 }

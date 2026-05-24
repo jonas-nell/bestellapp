@@ -132,3 +132,18 @@ footer{
     top:-10%;
     transform: translate(-50%, -50%);
 }
+
+.dish{
+    background-color: rgba(253, 234, 220, 1);
+    border-radius: 16px;
+    padding: 12px;
+
+}
+
+.dish-img{
+    height: 90px;
+    width: 100%;
+    border-radius: 16px;
+
+    object-fit: cover;
+}
