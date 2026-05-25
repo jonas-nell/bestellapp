@@ -73,8 +73,8 @@ function renderBasket(){
     if (basket.length === 0){
         basketContainer.innerHTML = getEmptyBasketTemplate();
     } else{
-        for (const item of basket){
-            basketContainer.innerHTML += getBasketTemplate(item);
+        basketContainer.innerHTML = "";
+        
+        basketContainer.innerHTML += getBasketTemplate();
         }
-    }
 }

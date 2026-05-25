@@ -36,5 +36,13 @@ function getEmptyBasketTemplate(){
 }
 
 function getBasketTemplate(){
-
+    return /*html*/`
+        <h4>Your Basket</h4>
+        <img class="close-icon" onclick="closeBasket()" src="./assets/icons/close.png" alt="">
+        <div id="order"></div>
+        <div>subtotal</div>
+        <div>deliv fee</div>
+        <div>total</div>
+        <button> Buy now (price)</button>
+    `
 }
