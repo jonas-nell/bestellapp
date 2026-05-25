@@ -1,9 +1,10 @@
 [
     {
+        "id":"1",
         "type": "burger",
-        "dish-name": "Veggie mushroom black burger",
-        "price": "16.9",
-        "dish-picture": "../assets/img/veggie-burger.jpg",
+        "dishName": "Veggie mushroom black burger",
+        "price": 16.9,
+        "dishPicture": "../assets/img/veggie-burger.jpg",
         "ingredients": [
             "Chicken",
             "Mozzarella",
@@ -13,10 +14,11 @@
         ]
     },
     {
+        "id":"2",
         "type": "burger",
-        "dish-name": "All meat burger",
-        "price": "15.9",
-        "dish-picture": "../assets/img/all-meat-burger.jpg",
+        "dishName": "All meat burger",
+        "price": 15.9,
+        "dishPicture": "../assets/img/all-meat-burger.jpg",
         "ingredients": [
             "Beef",
             "Bacon",
@@ -27,18 +29,20 @@
         ]
     },
     {
+        "id":"3",
         "type": "burger",
-        "dish-name": "Beef red burger",
-        "price": "14.9",
-        "dish-picture": "../assets/img/beef-red-burger.jpg",
+        "dishName": "Beef red burger",
+        "price": 14.9,
+        "dishPicture": "../assets/img/beef-red-burger.jpg",
         "ingredients": ["Beef", "Cheese", "Tomatoes", "Lettuce", "Onion"]
     },
 
     {
+        "id":"4",
         "type": "burger",
-        "dish-name": "Big chicken burger",
-        "price": "15.9",
-        "dish-picture": "../assets/img/big-chicken-burger.jpg",
+        "dishName": "Big chicken burger",
+        "price": 15.9,
+        "dishPicture": "../assets/img/big-chicken-burger.jpg",
         "ingredients": [
             "Chicken",
             "Cheese",
@@ -49,31 +53,35 @@
         ]
     },
     {
+        "id":"5",
         "type": "pizza",
-        "dish-name": "Pizza Margherita",
-        "price": "11.9",
-        "dish-picture": "../assets/img/pizza-margherita.jpg",
+        "dishName": "Pizza Margherita",
+        "price": 11.9,
+        "dishPicture": "../assets/img/pizza-margherita.jpg",
         "ingredients": ["Tomato Sauce", "Mozzarella"]
     },
     {
+        "id":"6",
         "type": "pizza",
-        "dish-name": "Pizza Chorizo",
-        "price": "13.9",
-        "dish-picture": "../assets/img/pizza-chorizo.jpg",
+        "dishName": "Pizza Chorizo",
+        "price": 13.9,
+        "dishPicture": "../assets/img/pizza-chorizo.jpg",
         "ingredients": ["Tomato slices", "Mozzarella", "Chorizo"]
     },
     {
+        "id":"7",
         "type": "pizza",
-        "dish-name": "Pizza Funghi",
-        "price": "12.9",
-        "dish-picture": "../assets/img/pizza-funghi.jpg",
+        "dishName": "Pizza Funghi",
+        "price": 12.9,
+        "dishPicture": "../assets/img/pizza-funghi.jpg",
         "ingredients": ["Red onion", "Olives", "Button Mushrooms", "Mozzarella"]
     },
     {
+        "id":"8",
         "type": "pizza",
-        "dish-name": "Quattro Formaggi with Chicken",
-        "price": "16.9",
-        "dish-picture": "../assets/img/pizza-quattro.jpg",
+        "dishName": "Quattro Formaggi with Chicken",
+        "price": 16.9,
+        "dishPicture": "../assets/img/pizza-quattro.jpg",
         "ingredients": [
             "Chicken",
             "Mozzarella",
@@ -83,10 +91,11 @@
         ]
     },
     {
+        "id":"9",
         "type": "salad",
-        "dish-name": "Warm beef arugula salad",
-        "price": "16.9",
-        "dish-picture": "../assets/img/beef-salad.jpg",
+        "dishName": "Warm beef arugula salad",
+        "price": 16.9,
+        "dishPicture": "../assets/img/beef-salad.jpg",
         "ingredients": [
             "Beef",
             "Arugula",
@@ -98,10 +107,11 @@
         ]
     },
     {
+        "id":"10",
         "type": "salad",
-        "dish-name": "Mini green salad",
-        "price": "7.9",
-        "dish-picture": "../assets/img/mini-salad.jpg",
+        "dishName": "Mini green salad",
+        "price": 7.9,
+        "dishPicture": "../assets/img/mini-salad.jpg",
         "ingredients": [
             "Green salad",
             "Cucumber",
@@ -111,10 +121,11 @@
         ]
     },
     {
+        "id":"11",
         "type": "salad",
-        "dish-name": "Green salad with sea food",
-        "price": "16.9",
-        "dish-picture": "../assets/img/green-salad.jpg",
+        "dishName": "Green salad with sea food",
+        "price": 16.9,
+        "dishPicture": "../assets/img/green-salad.jpg",
         "ingredients": [
             "Mixed greens",
             "Cherry tomatoes",
@@ -126,10 +137,11 @@
         ]
     },
     {
+        "id":"12",
         "type": "salad",
-        "dish-name": "Vegan green salad with tofu",
-        "price": "14.9",
-        "dish-picture": "../assets/img/vegan-salad.jpg",
+        "dishName": "Vegan green salad with tofu",
+        "price": 14.9,
+        "dishPicture": "../assets/img/vegan-salad.jpg",
         "ingredients": [
             "Green salad",
             "Cherry tomatoes",

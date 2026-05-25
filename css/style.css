@@ -132,3 +132,45 @@ footer{
     top:-10%;
     transform: translate(-50%, -50%);
 }
+
+.dish{
+    background-color: rgba(253, 234, 220, 1);
+    border-radius: 16px;
+    padding: 12px;
+
+}
+
+.dish-img{
+    height: 90px;
+    width: 100%;
+    border-radius: 16px;
+
+    object-fit: cover;
+}
+
+.bottom-dish{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addBtn{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 2px 8px;
+}
+
+section .content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+section{
+    padding-bottom: 48px;
+}
+
+.dish-container{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
