@@ -1,4 +1,5 @@
 let dishes = [];
+let basket = [];
 
 async function loadDishes(){
     const savedDishes = localStorage.getItem("dishesData");
@@ -40,6 +41,18 @@ function renderDishes(){
 
 function addToBasket(dishId){
 
+    const basketItem = basket.find(item => item.id ===dishId);
+
+    if(basketItem){
+        basketItem.amount++;
+    } else{
+        basket.push({
+            id: dishId,
+            amount: 1
+        });
+    }
+    
+    renderBasket();
 }
 
 function toggleBasket(){
@@ -51,4 +64,16 @@ function toggleBasket(){
 function closeBasket(){
     document.getElementById("basket").classList.remove("open");
 
+}
+
+function renderBasket(){
+    const basketContainer = document.getElementById("basket");
+
+    if (basket.length === 0){
+        basketContainer.innerHTML = getEmptyBasketTemplate();
+    } else{
+        for (const item of basket){
+            basketContainer.innerHTML += getBasketTemplate(item);
+        }
+    }
 }

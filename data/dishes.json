@@ -1,6 +1,6 @@
 [
     {
-        "id":"1",
+        "id": 1,
         "type": "burger",
         "dishName": "Veggie mushroom black burger",
         "price": 16.9,
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "id":"2",
+        "id": 2,
         "type": "burger",
         "dishName": "All meat burger",
         "price": 15.9,
@@ -29,7 +29,7 @@
         ]
     },
     {
-        "id":"3",
+        "id": 3,
         "type": "burger",
         "dishName": "Beef red burger",
         "price": 14.9,
@@ -38,7 +38,7 @@
     },
 
     {
-        "id":"4",
+        "id": 4,
         "type": "burger",
         "dishName": "Big chicken burger",
         "price": 15.9,
@@ -53,7 +53,7 @@
         ]
     },
     {
-        "id":"5",
+        "id": 5,
         "type": "pizza",
         "dishName": "Pizza Margherita",
         "price": 11.9,
@@ -61,7 +61,7 @@
         "ingredients": ["Tomato Sauce", "Mozzarella"]
     },
     {
-        "id":"6",
+        "id": 6,
         "type": "pizza",
         "dishName": "Pizza Chorizo",
         "price": 13.9,
@@ -69,7 +69,7 @@
         "ingredients": ["Tomato slices", "Mozzarella", "Chorizo"]
     },
     {
-        "id":"7",
+        "id": 7,
         "type": "pizza",
         "dishName": "Pizza Funghi",
         "price": 12.9,
@@ -77,7 +77,7 @@
         "ingredients": ["Red onion", "Olives", "Button Mushrooms", "Mozzarella"]
     },
     {
-        "id":"8",
+        "id": 8,
         "type": "pizza",
         "dishName": "Quattro Formaggi with Chicken",
         "price": 16.9,
@@ -91,7 +91,7 @@
         ]
     },
     {
-        "id":"9",
+        "id": 9,
         "type": "salad",
         "dishName": "Warm beef arugula salad",
         "price": 16.9,
@@ -107,7 +107,7 @@
         ]
     },
     {
-        "id":"10",
+        "id": 10,
         "type": "salad",
         "dishName": "Mini green salad",
         "price": 7.9,
@@ -121,7 +121,7 @@
         ]
     },
     {
-        "id":"11",
+        "id": 11,
         "type": "salad",
         "dishName": "Green salad with sea food",
         "price": 16.9,
@@ -137,7 +137,7 @@
         ]
     },
     {
-        "id":"12",
+        "id": 12,
         "type": "salad",
         "dishName": "Vegan green salad with tofu",
         "price": 14.9,
