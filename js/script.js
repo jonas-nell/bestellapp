@@ -38,12 +38,13 @@ function renderDishes(){
     }
 }
 
-function addToBasket(){
+function addToBasket(dishId){
 
 }
 
-function openBasket(){
-    document.getElementById("basket").classList.add("open");
+function toggleBasket(){
+    
+    document.getElementById("basket").classList.toggle("open");
 
 }
 
