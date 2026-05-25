@@ -54,6 +54,7 @@ function addToBasket(dishId){
     }
     
     renderBasket();
+    renderOrder();
 }
 
 function toggleBasket(){
@@ -85,6 +86,6 @@ function renderOrder(){
     for (const item of basket){
         const dish = dishes.find(d => d.id === item.id);
 
-        order.innerHTML += getOrderTemplate(item);
+        order.innerHTML += getOrderTemplate(dish, item);
     }
 }

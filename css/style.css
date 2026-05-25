@@ -187,7 +187,6 @@ section{
     color: rgba(253, 234, 220, 1);
 
     padding: 28px 16px 80px 16px;
-    gap: 48px;
 }
 
 #basket.open{
@@ -205,4 +204,22 @@ h4 {
     position: absolute;
     top: 24px;
     right:24px;
+}
+
+#order{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: black;
+}
+
+.order-card{
+    background-color:rgba(253, 234, 220, 1);
+    border-radius: 16px;
+    padding: 16px 16px;
+}
+
+.order-bottom{
+    display:flex;
+    justify-content: space-between;
 }

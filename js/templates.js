@@ -46,3 +46,19 @@ function getBasketTemplate(){
         <button> Buy now (price)</button>
     `
 }
+
+function getOrderTemplate(dish, item){
+    return /*html*/`
+        <div class = order-card>
+            <p>${item.amount} x ${dish.dishName}</p>
+            <div class="order-bottom">
+                <div>
+                    <button>-</button>
+                    ${item.amount}
+                    <button>+</button>
+                </div>
+                price
+            </div>
+        </div>
+    `
+}
