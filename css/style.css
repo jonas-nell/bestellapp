@@ -183,10 +183,28 @@ section{
     width: 100%;
     height: 100dvh;
 
-    z-index: 123;
     background-color: rgba(54, 53, 52, 1);
+
+    padding: 28px 16px 80px 16px;
+
+
 }
 
 #basket.open{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    
+    color: rgba(253, 234, 220, 1);
+    font-size: 32px;
+}
+
+.close-icon{
+    height: 18px;
+    position: absolute;
+    top: 24px;
+    right:24px;
 }
