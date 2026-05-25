@@ -78,3 +78,13 @@ function renderBasket(){
         basketContainer.innerHTML += getBasketTemplate();
         }
 }
+
+function renderOrder(){
+    const order = document.getElementById("order");
+
+    for (const item of basket){
+        const dish = dishes.find(d => d.id === item.id);
+
+        order.innerHTML += getOrderTemplate(item);
+    }
+}
