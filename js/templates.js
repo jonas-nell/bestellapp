@@ -6,7 +6,7 @@ function getCategoryTemplate(category){
                     <h2>${category.title}</h2>
                     <img class="dish-icon" src="${category.icon}" alt="">
                 </div>
-                <div id="${category.type}-container"></div>
+                <div class="dish-container" id="${category.type}-container"></div>
             </div>
         </section>
     `;

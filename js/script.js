@@ -26,7 +26,7 @@ function saveToLocalStorage(){
 function renderCategories(){
     const main = document.getElementById("main");
 
-    for (let category of categories){
+    for (const category of categories){
         main.innerHTML += getCategoryTemplate(category);
     }
 }
