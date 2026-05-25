@@ -37,3 +37,17 @@ function renderDishes(){
         container.innerHTML += getDishTemplate(dish);
     }
 }
+
+function addToBasket(){
+
+}
+
+function openBasket(){
+    document.getElementById("basket").classList.add("open");
+
+}
+
+function closeBasket(){
+    document.getElementById("basket").classList.remove("open");
+
+}
