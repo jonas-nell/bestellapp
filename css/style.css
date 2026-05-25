@@ -184,10 +184,10 @@ section{
     height: 100dvh;
 
     background-color: rgba(54, 53, 52, 1);
+    color: rgba(253, 234, 220, 1);
 
     padding: 28px 16px 80px 16px;
-
-
+    gap: 48px;
 }
 
 #basket.open{
@@ -197,8 +197,6 @@ section{
 }
 
 h4 {
-    
-    color: rgba(253, 234, 220, 1);
     font-size: 32px;
 }
 

@@ -25,3 +25,16 @@ function getDishTemplate(dish){
         </div>
     `
 }
+
+function getEmptyBasketTemplate(){
+    return /*html*/`
+                <h4>Your Basket</h4>
+                <img class="close-icon" onclick="closeBasket()" src="./assets/icons/close.png" alt="">
+                <p>Nothing here yet. Go ahead and choose something delicious!</p>
+                <img src="./assets/icons/shopping-cart-icon-basket.png" alt="">
+    `
+}
+
+function getBasketTemplate(){
+
+}

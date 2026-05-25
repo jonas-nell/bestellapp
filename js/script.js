@@ -18,6 +18,7 @@ async function loadDishes(){
 function init(){
     renderCategories();
     renderDishes();
+    renderBasket();
 }
 
 function saveToLocalStorage(){
