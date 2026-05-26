@@ -74,10 +74,12 @@ function renderBasket(){
     if (basket.length === 0){
         basketContainer.innerHTML = getEmptyBasketTemplate();
     } else{
+        const {subtotal, deliveryCost, totalPrice} = calculateBasketTotals();
         basketContainer.innerHTML = "";
         
-        basketContainer.innerHTML += getBasketTemplate();
+        basketContainer.innerHTML += getBasketTemplate(subtotal, deliveryCost, totalPrice);
         }
+        renderOrder();
 }
 
 function renderOrder(){
@@ -102,6 +104,7 @@ function addDish(dishId){
 
     basketItem.amount ++;
 
+    renderBasket();
     renderOrder();
 }
 
@@ -129,4 +132,25 @@ function deleteDish(dishId){
 
     renderBasket();
     renderOrder();
+}
+
+function calculateBasketTotals(){
+    let subtotal = 0;
+
+    for (const item of basket) {
+        const dish = dishes.find(d => d.id === item.id);
+        if (dish){
+            subtotal+=dish.price * item.amount;  
+        }
+    }
+
+    const deliveryCost = 4.99;
+
+    const totalPrice = subtotal + deliveryCost;
+
+    return {
+        subtotal: subtotal,
+        deliveryCost: deliveryCost,
+        totalPrice: totalPrice
+    };
 }

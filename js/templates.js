@@ -35,15 +35,12 @@ function getEmptyBasketTemplate(){
     `
 }
 
-function getBasketTemplate(){
+function getBasketTemplate(subtotal, deliveryCost, totalPrice){
     return /*html*/`
         <h4>Your Basket</h4>
         <img class="close-icon" onclick="closeBasket()" src="./assets/icons/close.png" alt="">
         <div id="order"></div>
-        <div>subtotal</div>
-        <div>deliv fee</div>
-        <div>total</div>
-        <button> Buy now (price)</button>
+        ${getCalculationTemplate(subtotal, deliveryCost, totalPrice)}
     `
 }
 
@@ -62,4 +59,26 @@ function getOrderTemplate(dish, item){
             </div>
         </div>
     `
+}
+
+function getCalculationTemplate(subtotal, deliveryCost, totalPrice){
+    return /*html*/`
+        <div class="basket-calculations">
+            <div class="calc-row">
+                <span>Subtotal</span>
+                <span>${subtotal.toFixed(2)} €</span>
+            </div>
+            <div class ="calc-row">
+                <span>Delivery</span>
+                <span>${deliveryCost.toFixed(2)} €</span>
+            </div>
+        </div>
+        <hr class="basket-line">
+        <div class="calc-row">
+            <strong>Total</strong>
+            <strong>${totalPrice.toFixed(2)} €</strong>
+        </div>
+        <button class="buy-btn">Buy now (${totalPrice.toFixed(2)} €)</button>
+    `;
+
 }
