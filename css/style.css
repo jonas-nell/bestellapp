@@ -223,3 +223,24 @@ h4 {
     display:flex;
     justify-content: space-between;
 }
+
+#cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: white;
+    color: rgba(231, 108, 31, 1);
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
