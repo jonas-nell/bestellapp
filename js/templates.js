@@ -19,7 +19,7 @@ function getDishTemplate(dish){
             <h3>${dish.dishName}</h3>
             <p class="ingredients">${dish.ingredients.join(", ")}</p>
             <div class="bottom-dish">
-                <span>${dish.price.toFixed(2)} €</span>
+                <span>${dish.price.toFixed(2).replace('.', ',')} €</span>
                 <button class="addBtn" onclick="addToBasket(${dish.id})">Add to basket</button>
             </div>
         </div>
@@ -66,19 +66,19 @@ function getCalculationTemplate(subtotal, deliveryCost, totalPrice){
         <div class="basket-calculations">
             <div class="calc-row">
                 <span>Subtotal</span>
-                <span>${subtotal.toFixed(2)} €</span>
+                <span>${subtotal.toFixed(2).replace('.', ',')} €</span>
             </div>
             <div class ="calc-row">
                 <span>Delivery</span>
-                <span>${deliveryCost.toFixed(2)} €</span>
+                <span>${deliveryCost.toFixed(2).replace('.', ',')} €</span>
             </div>
         </div>
         <hr class="basket-line">
         <div class="calc-row">
             <strong>Total</strong>
-            <strong>${totalPrice.toFixed(2)} €</strong>
+            <strong>${totalPrice.toFixed(2).replace('.', ',')} €</strong>
         </div>
-        <button class="buy-btn">Buy now (${totalPrice.toFixed(2)} €)</button>
+        <button class="buy-btn">Buy now (${totalPrice.toFixed(2).replace('.', ',')} €)</button>
     `;
 
 }

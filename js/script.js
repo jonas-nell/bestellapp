@@ -96,7 +96,7 @@ function renderOrder(){
 
 function getDishPrice(dish, item){
     let dishPrice = item.amount * dish.price
-    return dishPrice
+    return dishPrice.toFixed(2).replace('.', ',') + "€"
 }
 
 function addDish(dishId){
@@ -145,7 +145,6 @@ function calculateBasketTotals(){
     }
 
     const deliveryCost = 4.99;
-
     const totalPrice = subtotal + deliveryCost;
 
     return {
