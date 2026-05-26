@@ -83,9 +83,24 @@ function renderBasket(){
 function renderOrder(){
     const order = document.getElementById("order");
 
+    order.innerHTML = "";
+
     for (const item of basket){
         const dish = dishes.find(d => d.id === item.id);
 
         order.innerHTML += getOrderTemplate(dish, item);
     }
+}
+
+function getDishPrice(dish, item){
+    let dishPrice = item.amount * dish.price
+    return dishPrice
+}
+
+function addDish(dishId){
+    const basketItem = basket.find(item => item.id === dishId);
+
+    basketItem.amount ++;
+
+    renderOrder();
 }
