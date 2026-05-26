@@ -51,6 +51,7 @@ function getOrderTemplate(dish, item){
     return /*html*/`
         <div class = order-card>
             <p>${item.amount} x ${dish.dishName}</p>
+            <img onclick="deleteDish(${item.id})" src="./assets/icons/delete.png" alt="">
             <div class="order-bottom">
                 <div>
                     <button onclick="subtractDish(${item.id})">-</button>

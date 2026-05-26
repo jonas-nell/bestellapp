@@ -117,3 +117,16 @@ function subtractDish(dishId){
     renderBasket();
     renderOrder();
 }
+
+function deleteDish(dishId){
+    const basketItem = basket.find(item => item.id === dishId);
+
+    basketItem.amount = 0;
+
+    if (basketItem.amount === 0){
+        basket = basket.filter(item => item.id !== dishId);
+    }
+
+    renderBasket();
+    renderOrder();
+}
