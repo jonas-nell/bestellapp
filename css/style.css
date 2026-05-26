@@ -184,10 +184,9 @@ section{
     height: 100dvh;
 
     background-color: rgba(54, 53, 52, 1);
+    color: rgba(253, 234, 220, 1);
 
     padding: 28px 16px 80px 16px;
-
-
 }
 
 #basket.open{
@@ -197,8 +196,6 @@ section{
 }
 
 h4 {
-    
-    color: rgba(253, 234, 220, 1);
     font-size: 32px;
 }
 
@@ -207,4 +204,22 @@ h4 {
     position: absolute;
     top: 24px;
     right:24px;
+}
+
+#order{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: rgba(54, 53, 52, 1);
+}
+
+.order-card{
+    background-color:rgba(253, 234, 220, 1);
+    border-radius: 16px;
+    padding: 16px 16px;
+}
+
+.order-bottom{
+    display:flex;
+    justify-content: space-between;
 }
