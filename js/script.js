@@ -162,15 +162,17 @@ function closeBasket() {
 
 function updateCartBadge(){
     const badge = document.getElementById("cart-badge");
+    const cartIcon = document.getElementById("cart-icon");
 
     const totalItems = basket.reduce((sum, item) => sum + item.amount, 0);
 
     if (totalItems === 0){
-        badge.classList.add("hidden");
+        badge.style.display = "none";
+        cartIcon.src = "./assets/icons/shopping-cart-white.png";
         return;
     }
 
-    badge.classList.remove("hidden");
-
-    badge.textContent = totalItems;
+    badge.style.display = "flex";            //toggling class doesnt work, badge.hidden, doesnt work
+    badge.innerText = totalItems;
+    cartIcon.src = "./assets/icons/shopping-cart-orange.png";
 }
