@@ -53,7 +53,7 @@ function getOrderTemplate(dish, item){
             <p>${item.amount} x ${dish.dishName}</p>
             <div class="order-bottom">
                 <div>
-                    <button onclick="subtractDish()">-</button>
+                    <button onclick="subtractDish(${item.id})">-</button>
                     ${item.amount}
                     <button onclick="addDish(${item.id})">+</button>
                 </div>
