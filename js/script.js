@@ -110,7 +110,7 @@ function subtractDish(dishId){
 
     basketItem.amount --;
 
-    if (basketItem.amount < 1){
+    if (basketItem.amount === 0){
         basket = basket.filter(item => item.id !== dishId);
     }
     
