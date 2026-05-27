@@ -4,7 +4,7 @@
         "type": "burger",
         "dishName": "Veggie mushroom black burger",
         "price": 16.9,
-        "dishPicture": "../assets/img/veggie-burger.jpg",
+        "dishPicture": "./assets/img/veggie-burger.jpg",
         "ingredients": [
             "Chicken",
             "Mozzarella",
@@ -18,7 +18,7 @@
         "type": "burger",
         "dishName": "All meat burger",
         "price": 15.9,
-        "dishPicture": "../assets/img/all-meat-burger.jpg",
+        "dishPicture": "./assets/img/all-meat-burger.jpg",
         "ingredients": [
             "Beef",
             "Bacon",
@@ -33,7 +33,7 @@
         "type": "burger",
         "dishName": "Beef red burger",
         "price": 14.9,
-        "dishPicture": "../assets/img/beef-red-burger.jpg",
+        "dishPicture": "./assets/img/beef-red-burger.jpg",
         "ingredients": ["Beef", "Cheese", "Tomatoes", "Lettuce", "Onion"]
     },
 
@@ -42,7 +42,7 @@
         "type": "burger",
         "dishName": "Big chicken burger",
         "price": 15.9,
-        "dishPicture": "../assets/img/big-chicken-burger.jpg",
+        "dishPicture": "./assets/img/big-chicken-burger.jpg",
         "ingredients": [
             "Chicken",
             "Cheese",
@@ -57,7 +57,7 @@
         "type": "pizza",
         "dishName": "Pizza Margherita",
         "price": 11.9,
-        "dishPicture": "../assets/img/pizza-margherita.jpg",
+        "dishPicture": "./assets/img/pizza-margherita.jpg",
         "ingredients": ["Tomato Sauce", "Mozzarella"]
     },
     {
@@ -65,7 +65,7 @@
         "type": "pizza",
         "dishName": "Pizza Chorizo",
         "price": 13.9,
-        "dishPicture": "../assets/img/pizza-chorizo.jpg",
+        "dishPicture": "./assets/img/pizza-chorizo.jpg",
         "ingredients": ["Tomato slices", "Mozzarella", "Chorizo"]
     },
     {
@@ -73,7 +73,7 @@
         "type": "pizza",
         "dishName": "Pizza Funghi",
         "price": 12.9,
-        "dishPicture": "../assets/img/pizza-funghi.jpg",
+        "dishPicture": "./assets/img/pizza-funghi.jpg",
         "ingredients": ["Red onion", "Olives", "Button Mushrooms", "Mozzarella"]
     },
     {
@@ -81,7 +81,7 @@
         "type": "pizza",
         "dishName": "Quattro Formaggi with Chicken",
         "price": 16.9,
-        "dishPicture": "../assets/img/pizza-quattro.jpg",
+        "dishPicture": "./assets/img/pizza-quattro.jpg",
         "ingredients": [
             "Chicken",
             "Mozzarella",
@@ -95,7 +95,7 @@
         "type": "salad",
         "dishName": "Warm beef arugula salad",
         "price": 16.9,
-        "dishPicture": "../assets/img/beef-salad.jpg",
+        "dishPicture": "./assets/img/beef-salad.jpg",
         "ingredients": [
             "Beef",
             "Arugula",
@@ -111,7 +111,7 @@
         "type": "salad",
         "dishName": "Mini green salad",
         "price": 7.9,
-        "dishPicture": "../assets/img/mini-salad.jpg",
+        "dishPicture": "./assets/img/mini-salad.jpg",
         "ingredients": [
             "Green salad",
             "Cucumber",
@@ -125,7 +125,7 @@
         "type": "salad",
         "dishName": "Green salad with sea food",
         "price": 16.9,
-        "dishPicture": "../assets/img/green-salad.jpg",
+        "dishPicture": "./assets/img/green-salad.jpg",
         "ingredients": [
             "Mixed greens",
             "Cherry tomatoes",
@@ -141,7 +141,7 @@
         "type": "salad",
         "dishName": "Vegan green salad with tofu",
         "price": 14.9,
-        "dishPicture": "../assets/img/vegan-salad.jpg",
+        "dishPicture": "./assets/img/vegan-salad.jpg",
         "ingredients": [
             "Green salad",
             "Cherry tomatoes",
