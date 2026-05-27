@@ -1,0 +1,70 @@
+@media screen and (min-width: 1024px){
+    #basket{
+        position: sticky;
+        top: 5dvh;
+        left:90%;
+
+        width: 500px;
+        max-height: 710px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding-right: 64px;
+        padding-left: 32px;
+
+        border-radius: 32px;
+
+        z-index: 123;
+    }
+
+    #order{
+        max-height: 360px;
+    }
+
+    #basket .close-icon{
+        display: none;
+    }
+
+    .dish-container{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .dish{
+        width: 750px;
+    }
+
+    body{
+        padding-bottom: 0;
+    }
+
+    .landing-icon{
+        height: 150 px;
+    }
+
+    #landing-section .content{
+        gap: 78px;
+    }
+
+    .landing-img{
+        height: 55dvh
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .rating-icon{
+        top: 3px;
+    }
+
+    nav{
+        display: none;
+    }
+}
