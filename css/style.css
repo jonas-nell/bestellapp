@@ -244,3 +244,39 @@ h4 {
 /* #cart-bade.hidden {
     display: none;
 } */
+
+#confirmation{
+    border: none;
+    padding: 32px;
+
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+    background-color:rgba(54, 53, 52, 1);
+    color:rgba(253, 234, 220, 1);
+    
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+#confirmation[open]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+h5{
+    font-size: 32px;
+}
+
+.truck{
+    width: 160px;
+}
+
+.no-scroll{
+    overflow: hidden;
+}

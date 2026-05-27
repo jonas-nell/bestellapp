@@ -52,6 +52,13 @@
             <a href=""><img src="./assets/icons/menu-icon.png" alt=""></a>
             <button onclick="toggleBasket()"><img id="cart-icon" src="" alt=""> <span id="cart-badge"></span></button>
         </nav>
+        <dialog id="confirmation">
+            <img class="close-icon" onclick="closeOrderConfirmation(); closeBasket()" src="./assets/icons/close.png" alt="">
+            <img class="truck" src="./assets/icons/delivery-truck-icon.png
+            " alt="">
+            <h5>Order confirmed!</h5>
+            <p>Your food is on the way!</p>
+        </dialog>
     </body>
 </html>
 

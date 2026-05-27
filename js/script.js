@@ -153,11 +153,16 @@ function calculateBasketTotals() {
 }
 
 function toggleBasket() {
-    document.getElementById("basket").classList.toggle("open");
+    const basket = document.getElementById("basket");
+
+    basket.classList.toggle("open");
+
+    document.body.classList.toggle("no-scroll", basket.classList.contains("open"));
 }
 
 function closeBasket() {
     document.getElementById("basket").classList.remove("open");
+    document.body.classList.remove("no-scroll");
 }
 
 function updateCartBadge(){
@@ -175,4 +180,18 @@ function updateCartBadge(){
     badge.style.display = "flex";            //toggling class doesnt work, badge.hidden, doesnt work
     badge.innerText = totalItems;
     cartIcon.src = "./assets/icons/shopping-cart-orange.png";
+}
+
+function openOrderConfirmation(){
+    const dialog = document.getElementById("confirmation");
+    dialog.showModal();
+    document.body.classList.add("no-scroll");
+}
+
+function closeOrderConfirmation(){
+    const dialog = document.getElementById("confirmation");
+    dialog.close();
+    basket = [];
+    document.body.classList.remove("no-scroll");
+    renderBasketUI();
 }
