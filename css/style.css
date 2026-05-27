@@ -177,6 +177,7 @@ section{
     display: flex;
     flex-direction: column;
     gap:16px;
+    margin-top: 28px;
 }
 
 #basket{
@@ -189,6 +190,7 @@ section{
 
     background-color: rgba(54, 53, 52, 1);
     color: rgba(253, 234, 220, 1);
+    border-radius: 32px;
 
     padding: 16px 16px 70px 16px;
 }

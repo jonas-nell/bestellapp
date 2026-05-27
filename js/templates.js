@@ -16,11 +16,13 @@ function getDishTemplate(dish){
     return /*html*/`
         <div class="dish">
             <img class="dish-img" src="${dish.dishPicture}" alt="">
-            <h3>${dish.dishName}</h3>
-            <p class="ingredients">${dish.ingredients.join(", ")}</p>
-            <div class="bottom-dish">
-                <span class = "price">${dish.price.toFixed(2).replace('.', ',')} €</span>
-                <button class="addBtn" onclick="addToBasket(${dish.id})">Add to basket</button>
+            <div class="dish-card-content">
+                <h3>${dish.dishName}</h3>
+                <p class="ingredients">${dish.ingredients.join(", ")}</p>
+                <div class="bottom-dish">
+                    <span class = "price">${dish.price.toFixed(2).replace('.', ',')} €</span>
+                    <button class="addBtn" onclick="addToBasket(${dish.id})">Add to basket</button>
+                </div>
             </div>
         </div>
     `;

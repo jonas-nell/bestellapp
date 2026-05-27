@@ -1,3 +1,27 @@
+@media screen and (min-width: 767px){
+    #confirmation{
+        width: 50dvh;
+        height: 40dvh;
+        border-radius: 32px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #confirmation::backdrop{
+        background-color: rgba(0, 0, 0, 0.5); 
+        backdrop-filter: blur(2px);
+    }
+
+    #basket{
+        width: 85dvh;
+        height: 90dvh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media screen and (min-width: 1024px){
     .layout{
         display: flex;
@@ -12,15 +36,17 @@
     #basket{
         position: sticky;
         top: 5dvh;
+        transform: none;
 
-        width: 500px;
+        width: 420px;
         max-height: 710px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 32px;
-        padding-right: 64px;
+        padding-right: 32px;
         padding-left: 32px;
 
         border-radius: 32px;
@@ -38,24 +64,62 @@
 
     .dish-header{
         width: 100vw;
+        padding-left: 150px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 24px;
+    }
+
+    .dish-icon{
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+
+        height: 75px;
     }
 
     .dish-container{
         width: 100%;
         display: flex;
         align-items: flex-start;
+        padding-left: 48px;
     }
+
     
     .dish{
-        width: 750px;
+        display: flex;
+        width: 500px;
+        gap: 16px;
     }
+
+    .dish-img{
+        height: 130px;
+        width: 200px;
+        flex-shrink: 0;
+        object-fit: cover;
+
+        align-self: center;
+
+    }
+
+    .dish-card-content{
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%;
+    }
+
 
     body{
         padding-bottom: 0;
     }
 
     .landing-icon{
-        height: 150 px;
+        height: 200px;
     }
 
     #landing-section .content{
@@ -79,5 +143,29 @@
 
     nav{
         display: none;
+    }
+
+    .order-card{
+        text-align: left;
+    }
+
+    #confirmation{
+        width: 50dvh;
+        height: 40dvh;
+        border-radius: 32px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #confirmation::backdrop{
+        background-color: rgba(0, 0, 0, 0.5); 
+        backdrop-filter: blur(2px);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .dish-container{
+        padding-left: 200px;
     }
 }
