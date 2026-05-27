@@ -332,3 +332,11 @@ hr{
     font-size: 22px;
     font-weight: bold;
 }
+
+.price{
+    font-weight: bold;
+}
+
+.bottom-dish{
+    margin-top: 8px;
+}

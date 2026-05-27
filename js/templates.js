@@ -19,7 +19,7 @@ function getDishTemplate(dish){
             <h3>${dish.dishName}</h3>
             <p class="ingredients">${dish.ingredients.join(", ")}</p>
             <div class="bottom-dish">
-                <span>${dish.price.toFixed(2).replace('.', ',')} €</span>
+                <span class = "price">${dish.price.toFixed(2).replace('.', ',')} €</span>
                 <button class="addBtn" onclick="addToBasket(${dish.id})">Add to basket</button>
             </div>
         </div>
