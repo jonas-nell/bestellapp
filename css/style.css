@@ -71,12 +71,12 @@ h1 {
     text-align: center;
 }
 
-.landing-section {
+#landing-section {
     padding-top: 16px;
     padding-bottom: 36px;
 }
 
-.landing-section .content{
+#landing-section .content{
     display: flex;
     flex-direction: column;
     gap: 62px;
@@ -125,7 +125,7 @@ footer{
 }
 
 .dish-header{
-    height:80px;
+    height:70px;
     width: 100vw;
     left: 50%;
     right: 50%;
