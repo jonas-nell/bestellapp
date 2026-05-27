@@ -1,8 +1,17 @@
 @media screen and (min-width: 1024px){
+    .layout{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #main-content{
+        flex: 1;
+        min-width: 0;
+    }
+
     #basket{
         position: sticky;
         top: 5dvh;
-        left:90%;
 
         width: 500px;
         max-height: 710px;
@@ -25,6 +34,10 @@
 
     #basket .close-icon{
         display: none;
+    }
+
+    .dish-header{
+        width: 100vw;
     }
 
     .dish-container{
