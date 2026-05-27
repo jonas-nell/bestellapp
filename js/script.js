@@ -71,18 +71,17 @@ function subtractDish(dishId) {
     if (basketItem.amount === 0) {
         basket = basket.filter((item) => item.id !== dishId);
     }
-    
+
     renderBasketUI();
 }
 
 function deleteDish(dishId) {
-
-    basket = basket.filter(item => item.id !== dishId);
+    basket = basket.filter((item) => item.id !== dishId);
 
     renderBasketUI();
 }
 
-function renderBasketUI(){
+function renderBasketUI() {
     const basketContainer = document.getElementById("basket");
 
     if (basket.length === 0) {
@@ -92,12 +91,11 @@ function renderBasketUI(){
     }
 
     basketContainer.innerHTML = getBasketTemplate();
-    
+
     renderOrderItems();
     renderBasketTotals();
     updateCartBadge();
 }
-
 
 function renderOrderItems() {
     const order = document.getElementById("order");
@@ -111,26 +109,27 @@ function renderOrderItems() {
     }
 }
 
-function renderBasketTotals(){
+function renderBasketTotals() {
     const container = document.getElementById("basket-calculations");
 
-    if (basket.length === 0){
+    if (basket.length === 0) {
         container.innerHTML = "";
         return;
     }
 
-    const {subtotal, deliveryCost, totalPrice} = calculateBasketTotals();
+    const { subtotal, deliveryCost, totalPrice } = calculateBasketTotals();
 
-    container.innerHTML = getCalculationTemplate(subtotal, deliveryCost, totalPrice);
+    container.innerHTML = getCalculationTemplate(
+        subtotal,
+        deliveryCost,
+        totalPrice,
+    );
 }
 
 function getDishPrice(dish, item) {
     let dishPrice = item.amount * dish.price;
     return dishPrice.toFixed(2).replace(".", ",") + "€";
 }
-
-
-
 
 function calculateBasketTotals() {
     let subtotal = 0;
@@ -157,7 +156,10 @@ function toggleBasket() {
 
     basket.classList.toggle("open");
 
-    document.body.classList.toggle("no-scroll", basket.classList.contains("open"));
+    document.body.classList.toggle(
+        "no-scroll",
+        basket.classList.contains("open"),
+    );
 }
 
 function closeBasket() {
@@ -165,30 +167,35 @@ function closeBasket() {
     document.body.classList.remove("no-scroll");
 }
 
-function updateCartBadge(){
+function updateCartBadge() {
     const badge = document.getElementById("cart-badge");
     const cartIcon = document.getElementById("cart-icon");
 
     const totalItems = basket.reduce((sum, item) => sum + item.amount, 0);
 
-    if (totalItems === 0){
+    if (totalItems === 0) {
         badge.style.display = "none";
         cartIcon.src = "./assets/icons/shopping-cart-white.png";
         return;
     }
 
-    badge.style.display = "flex";            //toggling class doesnt work, badge.hidden, doesnt work
+    badge.style.display = "flex"; //toggling class doesnt work, badge.hidden, doesnt work
     badge.innerText = totalItems;
     cartIcon.src = "./assets/icons/shopping-cart-orange.png";
 }
 
-function openOrderConfirmation(){
+function openOrderConfirmation() {
     const dialog = document.getElementById("confirmation");
     dialog.showModal();
     document.body.classList.add("no-scroll");
+
+    dialog.addEventListener("click", (event) => {
+        closeOrderConfirmation();
+        closeBasket();
+    });
 }
 
-function closeOrderConfirmation(){
+function closeOrderConfirmation() {
     const dialog = document.getElementById("confirmation");
     dialog.close();
     basket = [];

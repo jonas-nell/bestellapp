@@ -336,3 +336,12 @@ hr{
 .layout{
     padding: 0;
 }
+
+button, 
+.addBtn, 
+.buyBtn, 
+.delete, 
+.close-icon, 
+nav a {
+    cursor: pointer;
+}
