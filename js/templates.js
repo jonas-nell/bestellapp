@@ -19,11 +19,11 @@ function getDishTemplate(dish){
             <h3>${dish.dishName}</h3>
             <p class="ingredients">${dish.ingredients.join(", ")}</p>
             <div class="bottom-dish">
-                <span>${dish.price.toFixed(2).replace('.', ',')} €</span>
+                <span class = "price">${dish.price.toFixed(2).replace('.', ',')} €</span>
                 <button class="addBtn" onclick="addToBasket(${dish.id})">Add to basket</button>
             </div>
         </div>
-    `
+    `;
 }
 
 function getEmptyBasketTemplate(){
@@ -32,7 +32,7 @@ function getEmptyBasketTemplate(){
                 <img class="close-icon" onclick="closeBasket()" src="./assets/icons/close.png" alt="">
                 <p>Nothing here yet. Go ahead and choose something delicious!</p>
                 <img src="./assets/icons/shopping-cart-icon-basket.png" alt="">
-    `
+    `;
 }
 
 function getOrderTemplate(dish, item){
@@ -49,7 +49,7 @@ function getOrderTemplate(dish, item){
                 ${getDishPrice(dish, item)}
             </div>
         </div>
-    `
+    `;
 }
 
 function getCalculationTemplate(subtotal, deliveryCost, totalPrice){
