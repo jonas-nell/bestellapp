@@ -126,6 +126,12 @@ footer{
 
 .dish-header{
     height:80px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
     color: white;
     background-color: rgba(231, 108, 31, 1);
 
