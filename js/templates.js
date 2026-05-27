@@ -69,7 +69,7 @@ function getCalculationTemplate(subtotal, deliveryCost, totalPrice){
             <strong>Total</strong>
             <strong>${totalPrice.toFixed(2).replace('.', ',')} €</strong>
         </div>
-        <button class="buy-btn">Buy now (${totalPrice.toFixed(2).replace('.', ',')} €)</button>
+        <button class="buy-btn" onclick="openOrderConfirmation()">Buy now (${totalPrice.toFixed(2).replace('.', ',')} €)</button>
     `;
 
 }
