@@ -42,7 +42,7 @@ function getEmptyBasketTemplate(){
 function getOrderTemplate(dish, item){
     return /*html*/`
         <div class = order-card>
-            <p>${item.amount} x ${dish.dishName}</p>
+            <p>${dish.dishName}</p>
             <img class="delete" onclick="deleteDish(${item.id})" src="./assets/icons/delete.png" alt="">
             <div class="order-bottom">
                 <div>
