@@ -163,6 +163,10 @@
         backdrop-filter: blur(2px);
     }
 
+    .x{
+        display: flex;
+    }
+
 }
 
 @media screen and (min-width: 1200px){

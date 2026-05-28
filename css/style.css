@@ -19,6 +19,13 @@
 
 body{
     padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#main-content{
+    flex: 1;
 }
 
 header {
@@ -212,6 +219,7 @@ h4 {
     flex-direction: column;
     gap: 8px;
     color: rgba(54, 53, 52, 1);
+    border: inset 1px rgba(54, 53, 52, 1);
 
     width: 100%;
 
@@ -299,6 +307,7 @@ h5{
 #basket-calculations{
     width: 100%;
     font-size: 18px;
+    margin-top: auto;
 }
 
 .calc-row{
@@ -344,4 +353,8 @@ button,
 .close-icon, 
 nav a {
     cursor: pointer;
+}
+
+.x{
+    padding: 0;
 }
