@@ -1,6 +1,6 @@
 function getCategoryTemplate(category){
     return /*html*/`
-        <section>
+        <article>
             <div class="dish-header">
                 <div class="content">
                     <h2>${category.title}</h2>
@@ -10,7 +10,7 @@ function getCategoryTemplate(category){
             <div class="content">
                 <div class="dish-container" id="${category.type}-container"></div>
             </div>
-        </section>
+        </article>
     `;
 }
 

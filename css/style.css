@@ -23,6 +23,11 @@ body{
     flex-direction: column;
 }
 
+/* main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 
 #main-content{
     flex: 1;
@@ -101,6 +106,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 450;
 }
 
 footer{
@@ -172,6 +178,9 @@ footer{
 
 section{
     padding-bottom: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .dish-container{
@@ -201,6 +210,7 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    z-index: 200;
 }
 
 h4 {
@@ -263,6 +273,7 @@ h4 {
 } */
 
 #confirmation{
+    position: fixed;
     border: none;
     padding: 32px;
 
@@ -284,6 +295,7 @@ h4 {
     align-items: center;
     justify-content: center;
     gap: 16px;
+    ;
 }
 
 h5{
@@ -355,6 +367,9 @@ nav a {
     cursor: pointer;
 }
 
-.x{
-    padding: 0;
+.basket-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150dvh;
 }
