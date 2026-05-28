@@ -32,6 +32,8 @@
         position: sticky;
         top: 5dvh;
         transform: none;
+        right: 0;
+        left: 100%;
 
         width: 420px;
         max-height: 710px;
@@ -91,9 +93,6 @@
         gap: 16px;
     }
 
-    .layout{
-        display: flex;
-    }
 
     .dish-img{
         height: 130px;
