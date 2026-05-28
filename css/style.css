@@ -23,6 +23,7 @@ body{
     flex-direction: column;
 }
 
+
 #main-content{
     flex: 1;
 }
@@ -355,7 +356,5 @@ nav a {
 }
 
 .x{
-    display: flex;
-    flex: 1;
-    
+    padding: 0;
 }
