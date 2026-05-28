@@ -19,6 +19,12 @@
 
 body{
     padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content{
+    flex: 1;
 }
 
 header {
@@ -344,4 +350,10 @@ button,
 .close-icon, 
 nav a {
     cursor: pointer;
+}
+
+.x{
+    display: flex;
+    flex: 1;
+    
 }
