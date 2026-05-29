@@ -202,3 +202,4 @@ function closeOrderConfirmation() {
     document.body.classList.remove("no-scroll");
     renderBasketUI();
 }
+

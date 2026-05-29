@@ -23,15 +23,12 @@
 }
 
 @media screen and (min-width: 1024px){
-    /* #main-content{
-        flex: 1;
-        min-width: 0;
-    } */
+
 
     #basket{
         position: sticky;
-        top: 5dvh;
         transform: none;
+        top: 0;
         right: 0;
 
         width: 420px;
